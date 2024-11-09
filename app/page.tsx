@@ -90,7 +90,7 @@ export default function Home() {
      
        <TestimonialsSection  
        contato="Falar com um especialista"
-         stars={4}
+         
          text="'Antes da implementação, minha rotina era cheia de tarefas manuais. Com a automação dos processos, agora conseguimos organizar e agilizar o fluxo de trabalho de forma muito mais eficiente, proporcionando uma gestão de clientes e demandas muito mais assertiva!'"
          name="Hacmoni Assis."
          position="Advogado"

@@ -3,7 +3,7 @@ import Image from "next/image";
 import React from "react";
 
 interface TestimonialProps {
-  stars: number;
+
   text: string;
   name: string;
   position: string;
@@ -11,7 +11,7 @@ interface TestimonialProps {
 }
 
 const Testimonial: React.FC<TestimonialProps> = ({
-  stars,
+ 
   text,
   name,
   position,
