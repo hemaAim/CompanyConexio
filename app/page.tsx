@@ -58,7 +58,8 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="isolate overflow-hidden flex flex-col  gap-16 items-center  py-24 sm:py-20 px-16">
+      <section className="isolate overflow-hidden flex flex-col  gap-16 items-center  py-24 sm:py-20 px-16"> 
+        
         <h2 className="text-3xl font-semibold mb-6 text-primary">
         Seu Caminho para Automatização e Eficiente em 3 Etapas
         </h2>
