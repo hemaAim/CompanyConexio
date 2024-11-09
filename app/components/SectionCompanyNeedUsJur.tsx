@@ -11,7 +11,7 @@ export default function CompanyNeedUsJur() {
          
         <h1 className="text-3xl font-bold">Escritórios Jurídicos</h1>
         <p className="text-base font-normal max-w-xl text-left text-gray-600 ">
-  Sistema de Controle Jurídico para advogados da Comarca de Barueri: com um simples cadastro das diligências, o sistema envia automaticamente o evento para o Google Agenda e, no dia da audiência, o advogado recebe um alerta. Após a realização, o status é atualizado para "Concluído" e a contagem para o pagamento da empresa é iniciada.
+  Sistema de Controle Jurídico para advogados da Comarca de Barueri: com um simples cadastro das diligências, o sistema envia automaticamente o evento para o Google Agenda e, no dia da audiência, o advogado recebe um alerta. Após a realização, o status é atualizado para &quot;Concluído&quot; e a contagem para o pagamento da empresa é iniciada.
 </p>
 <ul className="space-y-2">
   <li className="flex items-center space-x-2 mt-8">

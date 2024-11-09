@@ -7,8 +7,14 @@ const Footer: React.FC = () => {
       <div className="w-full mx-auto max-w-screen-xl py-4 md:flex md:items-center md:justify-between">
       <div className="flex justify-center items-center">
     <a href="" className="flex items-center ">
-        <img src="/assets/LogoOficial.svg" className="w-8  p-1" alt="Flowbite Logo" />
-  
+      
+        <Image
+        src="/assets/LogoOficial.svg"
+        alt="WhatsApp Icon"
+        width={24}
+        height={24}
+        priority
+      />
           <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
            Conexio
           </span>

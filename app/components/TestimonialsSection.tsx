@@ -1,4 +1,5 @@
 "use client"
+import Image from "next/image";
 import React from "react";
 
 interface TestimonialProps {
@@ -29,11 +30,13 @@ const Testimonial: React.FC<TestimonialProps> = ({
       <div className=" shadow-md  rounded-3xl overflow-hidden w-full max-w-6xl md:flex bg-primary ">
         {/* Image Section */}
         <div className="w-full  md:w-1/2 flex items-center justify-center">
-          <img
-            src="assets/ImgTestemonial.svg" // Replace with the actual image path
-            alt="Testimonial"
-            className="object-cover p-6 w-9/12"
-          />
+        <Image
+  src="/assets/ImgTestemonial.svg" // Caminho da imagem
+  alt="Testimonial"
+  className="object-cover p-6 w-9/12"
+  width={400} // Ajuste o tamanho necessário
+  height={300} // Ajuste o tamanho necessário
+/>
         </div>
 
         {/* Text Section */}

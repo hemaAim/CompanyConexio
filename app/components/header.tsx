@@ -12,9 +12,14 @@ const Header: React.FC = () => {
     <nav className="w-full min-w-[320px]  flex justify-between  shadow p-3  bg-[#003366]">
      
     <div className="flex justify-center items-center">
-    <a href="https://flowbite.com/" className="flex items-center ">
-        <img src="/assets/LogoOficial.svg" className="w-8  p-1" alt="Flowbite Logo" />
-  
+    <a href="" className="flex items-center ">
+    <Image
+        src="/assets/LogoOficial.svg"
+        alt="WhatsApp Icon"
+        width={24}
+        height={24}
+        priority
+      />
           <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
            Conexio
           </span>

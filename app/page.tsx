@@ -8,7 +8,7 @@ import CTASection from "./components/CTAcomponent";
 import TestimonialsSection from "./components/TestimonialsSection";
 import Footer from "./components/Footer";
 import FAQ from "./components/FAQ";
-
+import Image from "next/image";
 // app/page.tsx
 export default function Home() {
   return (
@@ -17,11 +17,13 @@ export default function Home() {
       <Header /> 
 
       <section className="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32">
-        <img
-          alt=""
-          src="/assets/sps-universal-MnPF-0DTQ5c-unsplash.jpg"
-          className="absolute inset-0 -z-10 h-full bg-gray-700 opacity-20 w-full object-cover object-right md:object-center"
-        />
+      <Image
+  src="/assets/sps-universal-MnPF-0DTQ5c-unsplash.jpg"
+  alt=""
+  className="absolute inset-0 -z-10 h-full bg-gray-700 opacity-20 w-full object-cover object-right md:object-center"
+  width={1600} // Ajuste o tamanho necessário
+  height={900} // Ajuste o tamanho necessário
+/>
         <div className="py-8 px-16 mx-auto max-w-screen-xl text-center lg:py-16">
           <h1 className="mb-4 text-3xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl  dark:text-white">
           Descomplique a Gestão do Seu Negócio com Soluções Inteligentes e Personalizadas
