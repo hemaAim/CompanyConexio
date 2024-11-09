@@ -8,9 +8,17 @@ export default {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        'gradient-radial': 'radial-gradient(circle, var(--tw-gradient-stops))',
+      },
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        primary: "#003366",    // cor principal
+        secondary: "#37beb0",  // cor secundária
+        accent: "#fad038",     // cor de destaque
+        background: "#f3fdff", // cor de fundo
+      },
+      fontFamily: {
+        sans: ["Poppins", "sans-serif"],
       },
     },
   },

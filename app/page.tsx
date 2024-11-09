@@ -1,101 +1,111 @@
-import Image from "next/image";
+import Header from "./components/header";
 
+import "./globals.css"; // Arquivo de estilos globais
+import CompanyNeedUsJur from "./components/SectionCompanyNeedUsJur";
+import IntegrationSection from "./components/IntegrationSection";
+import Timeline from "./components/Timeline";
+import CTASection from "./components/CTAcomponent";
+import TestimonialsSection from "./components/TestimonialsSection";
+import Footer from "./components/Footer";
+import FAQ from "./components/FAQ";
+
+// app/page.tsx
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <div className="bg-white">
+      {/* Banner */}
+      <Header /> 
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+      <section className="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32">
+        <img
+          alt=""
+          src="/assets/sps-universal-MnPF-0DTQ5c-unsplash.jpg"
+          className="absolute inset-0 -z-10 h-full bg-gray-700 opacity-20 w-full object-cover object-right md:object-center"
+        />
+        <div className="py-8 px-16 mx-auto max-w-screen-xl text-center lg:py-16">
+          <h1 className="mb-4 text-3xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl  dark:text-white">
+          Descomplique a Gestão do Seu Negócio com Soluções Inteligentes e Personalizadas
+          </h1>
+          <p className="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48 dark:text-gray-400">
+          Liberte-se das tarefas repetitivas e foque no que realmente importa: crescimento e inovação.
+          </p>
+          <div className="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0">
+            <a
+              href="https://wa.me/55946565484?text=Oi%20tudo%20bem%3F%20Gostaria%20de%20saber%20mais%20sobre%20a%20plataforma%20de%20gest%C3%A3o"
+  target="_blank"
+              className="inline-flex justify-center items-center py-4 sm:text-base mt-4 px-5 text-xs font-medium text-center text-white rounded-lg focus:ring-4 focus:ring-blue-300 bg-secondary"
+            >
+             Transforme Seu Negócio Agora
+              <svg
+                className="w-3.5 h-3.5 ms-2 rtl:rotate-180"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 14 10"
+              >
+                <path
+                  stroke="currentColor"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M1 5h12m0 0L9 1m4 4L9 9"
+                />
+              </svg>
+            </a>
+          
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </section>
+      <section className="isolate overflow-hidden flex flex-col  gap-16 items-center  py-24 sm:py-20 px-16">
+        <h2 className="text-3xl font-semibold mb-6 text-primary">
+        Seu Caminho para Automatização e Eficiente em 3 Etapas
+        </h2>
+        <Timeline />
+      </section>
+
+      <section className="">
+        <IntegrationSection />
+      </section>
+
+      <section className="flex items-center py-8 h-auto justify-center bg-gray-100">
+        <CTASection btn="Entrar em Contato" description="Nossa equipe de especialistas está aqui para entender suas necessidades e criar uma solução que eleve a eficiência da sua operação. Entre em contato e veja como transformar a gestão do seu negócio." title="Pronto para Atingir um Novo Nível de Gestão? Vamos Conversar!" />
+      </section>
+     
+      {/* Sobre o Serviço */}
+
+      <section className="flex flex-col justify-center items-center pt-10" > 
+      <h2 className="text-3xl font-semibold mb-6 text-primary">
+      Casos de Sucesso
+          </h2> 
+       
+        <CompanyNeedUsJur />
+      </section>
+     
+     
+
+     
+      <section className=" bg-slate-200"> 
+     
+       <TestimonialsSection  
+       contato="Falar com um especialista"
+         stars={4}
+         text="'Antes da implementação, minha rotina era cheia de tarefas manuais. Com a automação dos processos, agora conseguimos organizar e agilizar o fluxo de trabalho de forma muito mais eficiente, proporcionando uma gestão de clientes e demandas muito mais assertiva!'"
+         name="Hacmoni Assis."
+         position="Advogado"
+       /> 
+      
+      </section> 
+      <section> 
+        <FAQ/>
+
+      </section>
+
+<Footer/>
+
+    
+ 
+   
+    
     </div>
   );
 }
