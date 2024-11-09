@@ -14,7 +14,7 @@ interface CTASectionProps {
   
   const CTASection: React.FC<CTASectionProps> = ({ title, description, btn }) => {
     const handleClick = () => {
-      window.open("https://wa.me/55946565484?text=Oi%20tudo%20bem%3F%20Gostaria%20de%20saber%20mais%20sobre%20a%20plataforma%20de%20gest%C3%A3o", "_blank");
+      window.open("https://wa.me/5511946565484?text=Oi%20tudo%20bem%3F%20Gostaria%20de%20saber%20mais%20sobre%20a%20plataforma%20de%20gest%C3%A3o", "_blank");
     };
   
 

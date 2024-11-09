@@ -33,7 +33,7 @@ export default function Home() {
           </p>
           <div className="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0">
             <a
-              href="https://wa.me/55946565484?text=Oi%20tudo%20bem%3F%20Gostaria%20de%20saber%20mais%20sobre%20a%20plataforma%20de%20gest%C3%A3o"
+              href="https://wa.me/5511946565484?text=Oi%20tudo%20bem%3F%20Gostaria%20de%20saber%20mais%20sobre%20a%20plataforma%20de%20gest%C3%A3o"
   target="_blank"
               className="inline-flex justify-center items-center py-4 sm:text-base mt-4 px-5 text-xs font-medium text-center text-white rounded-lg focus:ring-4 focus:ring-blue-300 bg-secondary"
             >

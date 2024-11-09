@@ -42,7 +42,7 @@ const Footer: React.FC = () => {
     </a>
   </li>
   <li>
-    <a href="https://wa.me/55946565484?text=Oi%20tudo%20bem%3F%20Gostaria%20de%20saber%20mais%20sobre%20a%20plataforma%20de%20gest%C3%A3o" className="">
+    <a href="https://wa.me/5511946565484?text=Oi%20tudo%20bem%3F%20Gostaria%20de%20saber%20mais%20sobre%20a%20plataforma%20de%20gest%C3%A3o" className="">
       <Image
         src="/assets/whatsapp.svg"
         alt="WhatsApp Icon"
